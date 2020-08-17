@@ -1,0 +1,105 @@
+.header {
+    &__banner {
+        background-image: url("../img/image-banner.png");
+        height: 110px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+
+        @include respond-to($min-laptop) {
+            height: 250px;
+        }
+    }
+}
+
+.header {
+    &__profile {
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        height: 100px;
+        padding: 0, 40px;
+    }
+}
+
+.header {
+    &__info {
+        display: flex;
+        flex-grow:10px;
+
+    }
+}
+
+.header {
+    &__avatar {
+        background-image: url("../img/profile-image.png");
+        background-size: cover;
+        height: 80px;
+        width: 80px;
+        border-radius: 50%;
+    }
+}
+
+.header {
+    &__details {
+        display: flex;
+        flex-direction: column;
+        height: 80px;
+        justify-content: center;
+        align-items: center;
+        margin-left: 15px;
+    }
+}
+
+.header {
+    &__name {
+        font-weight: bold;
+        font-size: $font-size-xx-large;
+    }
+}
+
+
+.header {
+    &__followers{
+        color: $gray;
+        font-size: $font-size-medium;
+    }
+}
+
+.header {
+    &__actions {
+        display: none;
+
+        @include respond-to($min-laptop){
+        display:flex;
+        justify-content: flex-end;
+        }
+    }
+}
+
+
+.main {
+    &__title {
+        font-size: $font-size-xx-large;
+        justify-content: center;
+        text-align: center;
+
+    }
+
+    &__preview {
+        height: 200px;
+        background-size: cover;
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    &__name {
+        font-size: $font-size-x-large;
+        font-weight: bold;
+        margin-bottom: 10px;
+    }
+
+    &__views {
+        color: $gray;
+    }
+}
